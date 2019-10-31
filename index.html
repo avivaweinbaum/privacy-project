@@ -10,14 +10,17 @@
 	 
 	<center>
       <div class="topnav">
-        <a href="./index.html">Home</a>
-        <a href="./aboutus.html">About Us</a>
-        <a href="./privacyinfo.html">Protecting your privacy</a>
+        <li><a class='active' href="./index.html">Home</a></li>
+        <li><a href="./aboutus.html">About Us</a></li>
+        <li><a href="./privacyinfo.html">Protecting your privacy</a></li>
       <div>
-	  <br>
 	</center>
-    <input type='text' id='terms' value='Input terms!' class='p'><br>
+	<br>
+    <br>
+	<h2>Paste privacy policy text here: </h2>
+    <input type='text' id='terms' class='p'><br>
 	<button onclick='processTerms()' class='p'>Submit</button>
-	 
+    <h2 id='title'></h2>
+	<p id='output'></p> 
   </body>
 </html>

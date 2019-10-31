@@ -1,10 +1,12 @@
 body {
- text-align: center; 
+  text-align: center; 
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 #terms {
   height: 150px;
-  width: 300px;
+  width: 400px;
   font-size: 14pt;
 }
 
@@ -14,14 +16,45 @@ h1 {
   font-weight: normal;
 }
 
+h2 {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 30px;
+  font-weight: normal;
+  margin-top: 50px;
+}
+
 p {
   font-family: 'Karla', sans-serif;
   font-size: 20px;
   font-weight: lighter;
 }
 
+li {
+  float: left;
+  display: block;
+  text-color: white;
+  text-align: center;
+  padding: 14px 16px;
+  background-color: gray;
+}
+
+li:hover {
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
 .topnav {
   font-size: 30px;
   font-weight: normal;
   font-family: 'Karla', sans-serif;
-}
+  position: relative;
+  margin-left: 18.5%;
+  margin-bottom: 50px;
+}  
