@@ -21,8 +21,10 @@ var keyWords = [
 
 function processTerms() {
   //console.log("made it here");
-  document.getElementById('output').innerHTML = ""; 
+  document.getElementById('outputL').innerHTML = ""; 
+  document.getElementById('outputR').innerHTML = "";  
   var report = [];
+
   text = document.getElementById('terms').value;
   text = text.split(" ");
   console.log(text);
@@ -40,9 +42,11 @@ function processTerms() {
   }
   //document.getElementById('output').innerHTML = '<b>Third-parties</b>: Other parties may be receiving your data without your knowledge or consent.<br>';
   //document.getElementById('output').innerHTML += '<b>Identify</b>: Your information may or may not be identifiable to you. See <i>Protecting your Privacy</i> for more information.';
+    
+
   for (var j = 0; j < report.length; j++) {
     console.log(report[j]);
-	document.getElementById('output').innerHTML += report[j] + "<br>";
+	document.getElementById('outputR').innerHTML += report[j] + "<br>";
   }
 }
 
