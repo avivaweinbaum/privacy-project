@@ -69,3 +69,7 @@ a:visited {
   color: red;
   font-style: italic;
 }
+
+#outputL {
+  text-align: left;
+}
