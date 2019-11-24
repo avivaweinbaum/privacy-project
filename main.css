@@ -1,7 +1,7 @@
 body {
   text-align: center; 
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .column {
@@ -10,9 +10,9 @@ body {
 }
 
 #terms {
-  height: 150px;
-  width: 400px;
-  font-size: 14pt;
+  height: 250px;
+  width: 550px;
+  font-size: 12pt;
 }
 
 h1 {
@@ -29,7 +29,7 @@ h2 {
 }
 
 p {
-  font-family: 'Karla', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 20px;
   font-weight: lighter;
 }
@@ -40,16 +40,16 @@ li {
   text-color: white;
   text-align: center;
   padding: 14px 16px;
-  background-color: gray;
+  background-color: lightgray;
 }
 
 li:hover {
-  background-color: white;
+  background-color: gray;
 }
 
 a {
   text-decoration: none;
-  text-color: white;
+  color: black;
 }
 
 a:visited {
@@ -59,8 +59,13 @@ a:visited {
 .topnav {
   font-size: 30px;
   font-weight: normal;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   position: relative;
-  margin-left: 18.5%;
-  margin-bottom: 50px;
+  margin-left: 22.5%;
 }  
+
+.bolded {
+  font-weight: 800;
+  color: red;
+  font-style: italic;
+}

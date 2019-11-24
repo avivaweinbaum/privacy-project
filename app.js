@@ -1,6 +1,12 @@
 var keyWords = [
 	"third",
 	"party",
+	"parties",
+	"party's",
+	"third-party",
+	"third-parties",
+	"third-party's",
+	"responsible",
 	"affiliates",
 	"advertisers",
 	"advertiser",
@@ -20,18 +26,16 @@ var keyWords = [
 ];
 
 function processTerms() {
-  //console.log("made it here");
   document.getElementById('outputL').innerHTML = ""; 
   document.getElementById('outputR').innerHTML = "";  
   var report = [];
 
   text = document.getElementById('terms').value;
-  text = text.split(" ");
-  console.log(text);
+  var arr  = text.split(" ");
   
-  for (var i = 0; i < text.length; i++) {
-	if (keyWords.includes(text[i]) && !report.includes(text[i])) {
-	  report.push(text[i]);
+  for (var i = 0; i < arr.length; i++) {
+	if (keyWords.includes(arr[i]) && !report.includes(arr[i])) {
+	  report.push(arr[i]);
 	}
   }
   if (report.length == 0) {
@@ -48,5 +52,20 @@ function processTerms() {
     console.log(report[j]);
 	document.getElementById('outputR').innerHTML += report[j] + "<br>";
   }
+
+  var out = "";
+  
+  for (var n = 0; n < arr.length; n++) {
+    if (keyWords.includes(arr[n])) {
+	  out += "<b class='bolded'>" + arr[n] + "</b>";
+    }
+	else {
+	  out += arr[n];
+	}
+    out += " ";
+  }
+  console.log(out);
+  document.getElementById('outputL').innerHTML = out; 
+
 }
 
