@@ -63,10 +63,7 @@ function processTerms() {
     }
     document.getElementById('outputL').innerHTML = out; 
 
-
   }
-  //document.getElementById('output').innerHTML = '<b>Third-parties</b>: Other parties may be receiving your data without your knowledge or consent.<br>';
-  //document.getElementById('output').innerHTML += '<b>Identify</b>: Your information may or may not be identifiable to you. See <i>Protecting your Privacy</i> for more information.';  
 
 }
 
