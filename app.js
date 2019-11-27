@@ -23,6 +23,9 @@ var keyWords = [
 	"tracking",
 	"track",
 	"information",
+	"opt",
+	"waive",
+	"privacy",
 	"protect"
 ];
 
@@ -35,7 +38,7 @@ function processTerms() {
   var arr  = text.split(" ");
   
   for (var i = 0; i < arr.length; i++) {
-	if (keyWords.includes(arr[i]) && !report.includes(arr[i])) {
+	if (keyWords.includes(arr[i].toLowerCase()) && !report.includes(arr[i])) {
 	  report.push(arr[i]);
 	}
   }
